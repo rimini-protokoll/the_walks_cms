@@ -1,31 +1,23 @@
 {
-  "name": "reveal-js-netlify-cms",
+  "name": "@the_walks/netlify-cms_user-images",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js",
-    "compile-js": "webpack -d",
-    "compile-presentation": "reveal-md"
+    "build": "webpack",
+    "dev": "webpack --watch"
   },
-  "author": "",
   "license": "MIT",
   "dependencies": {
-    "del": "^2.2.2",
-    "handlebars": "^4.0.8",
-    "mz": "^2.6.0",
-    "netlify-cms": "^0.4.0",
-    "react": "^15.5.4",
-    "recursive-copy": "^2.0.6",
-    "reveal-md": "^0.3.0",
-    "styled-components": "^1.4.6"
+    "firebase": "^9.0.2",
+    "react": "15.7.0",
+    "react-keyed-file-browser": "^1.13.1",
+    "react-tiny-virtual-list": "^2.2.0"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-react": "^6.24.1",
-    "webpack": "^2.6.0"
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.5",
+    "netlify-cms": "^2.10.161",
+    "webpack": "4.46.0"
   }
 }
