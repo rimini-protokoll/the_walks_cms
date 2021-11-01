@@ -13,7 +13,7 @@ module.exports = {
     {
       apply: (compiler) => {
         compiler.hooks.afterEmit.tap('AfterEmitPlugin', (compilation) => {
-          exec('cp dist/admin/cms.js ../static/admin/', (err, stdout, stderr) => {
+          exec('cp static/admin/cms.js ../static/admin/', (err, stdout, stderr) => {
             if (stdout) process.stdout.write(stdout);
             if (stderr) process.stderr.write(stderr);
           });
