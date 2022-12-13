@@ -17,12 +17,11 @@ export class VouchersControl extends Component {
     unusedVouchers: [],
     createNumVouchers: 1,
     loading: false,
-
   }
 
   constructor(props) {
     super(props)
-    const guestVenue = props.value || window.location.href.substring(window.location.href.lastIndexOf('/') + 1)
+    const guestVenue = this.props.entry.getIn(['data', 'guestVenue'])
     if (guestVenue) {
       this.state = {
         ...this.state,
