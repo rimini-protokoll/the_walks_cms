@@ -15,10 +15,10 @@ import { ref, deleteObject } from 'firebase/storage'
 
 export class UserImagesControl extends Component {
   state = {
-	db: null,
-	storage: null,
-	walkId: null,
-	markers: []
+    db: null,
+    storage: null,
+    walkId: null,
+    markers: []
   }
 
   constructor(props) {
