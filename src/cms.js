@@ -1,5 +1,6 @@
 import { UserImagesControl } from './UserImages'
 import { FirebaseFileControl } from './FirebaseFile'
+import { VoucherAnalyticsControl } from './VoucherAnalyticsControl'
 
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
@@ -30,9 +31,11 @@ getJSON(window.location.origin + '/.netlify/functions/firebaseAuth',
     const db = getFirestore()
     window.firebase = {
       storage,
-      db
+      db,
+      firebaseConfig,
     }
     CMS.registerWidget('userImages', UserImagesControl)
     CMS.registerWidget('firebaseFile', FirebaseFileControl)
+    CMS.registerWidget('voucherAnalytics', VoucherAnalyticsControl)
   }
 )
